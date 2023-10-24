@@ -24,6 +24,6 @@ VAR
 BEGIN
     str:='azza';
     is_pal: check_if_palindrom(str);
-    Write (is_pal)
+    Write (is_pal);
 
 END
