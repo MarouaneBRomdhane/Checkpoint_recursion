@@ -8,7 +8,7 @@ BEGIN
 
 
       IF (str[0] = str[str .length-1]) THEN
-        Substr:= " ";
+        Substr:= "";
         FOR i FROM 1 TO str .length-2 STEP step  DO
             Substr:= Substr + str[i]:
         END_FOR
