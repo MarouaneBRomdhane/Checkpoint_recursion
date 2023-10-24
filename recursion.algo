@@ -1,0 +1,29 @@
+FUNCTION check_if_palindrom(str:STRING) : BOOLEAN
+VAR
+    Substr : STRING;
+BEGIN
+      IF (str .length <=1) THEN
+        RETURN true:
+      END_IF
+
+
+      IF (str[0] = str[str .length-1]) THEN
+        Substr:= " ";
+        FOR i FROM 1 TO str .length-2 STEP step  DO
+            Substr:= Substr + str[i]:
+        END_FOR
+        RETURN check_if_palindrom (Substr):
+      ELSE 
+      RETURN false:
+      END_IF
+END
+ALGORITHM is_palindrom
+VAR
+    STR : STRING;
+    is_pal: BOOLEAN;
+BEGIN
+    str:='azza';
+    is_pal: check_if_palindrom(str);
+    Write (is_pal)
+
+END
